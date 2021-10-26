@@ -7,8 +7,7 @@ Regras do Fizbuzz
 4. Para qualquer outra posição fale o próprio número
 
 """
-def multiple_of(base,num):
-    return num % base == 0
+multiple_of = lambda base,num: num % base == 0
 
 def multiple_of_5(num):
     return multiple_of(5,num)
