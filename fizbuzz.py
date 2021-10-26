@@ -9,6 +9,7 @@ Regras do Fizbuzz
 """
 
 def robot(pos):
+    return str(pos)
     if pos == 4:
         return str(pos)
     if pos == 2:
