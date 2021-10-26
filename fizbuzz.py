@@ -7,13 +7,20 @@ Regras do Fizbuzz
 4. Para qualquer outra posição fale o próprio número
 
 """
-multiple_of = lambda base,num: num % base == 0
+from functools import partial
 
+multiple_of = lambda base,num: num % base == 0
+multiple_of_5 = partial(multiple_of, 5)
+multiple_of_3 = partial(multiple_of,3)
+
+
+'''
 def multiple_of_5(num):
     return multiple_of(5,num)
 
 def multiple_of_3(num):
     return multiple_of(3,num)
+'''
 
 def robot(pos):
     say = str(pos)
