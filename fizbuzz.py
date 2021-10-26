@@ -11,9 +11,9 @@ def robot(pos):
     say = str(pos)
     if pos % 3 == 0 and pos % 5 == 0:
         say ='fizzbuzz'
-    if pos % 5 == 0:
+    elif pos % 5 == 0:
         say ='buzz'
-    if pos % 3 == 0:
+    elif pos % 3 == 0:
         say ='fizz'
     return say
 
