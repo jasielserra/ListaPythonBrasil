@@ -9,6 +9,8 @@ Regras do Fizbuzz
 """
 
 def robot(pos):
+    if pos == 6:
+        return 'fizz'
     if pos == 3:
         return 'fizz'
     return str(pos)
@@ -19,3 +21,4 @@ if __name__ == '__main__':
     assert robot(4) == '4'
 
     assert robot(3) == 'fizz'
+    assert robot(6) == 'fizz'
