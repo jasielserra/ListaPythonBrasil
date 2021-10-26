@@ -8,9 +8,9 @@ Regras do Fizbuzz
 
 """
 def robot(pos):
-    if pos - pos // 5 * 5 == 0:
+    if pos % 5 == 0:
         return 'buzz'
-    if pos - pos // 3 * 3 == 0:
+    if pos % 3 == 0:
         return 'fizz'
 
     return str(pos)
