@@ -10,10 +10,10 @@ Regras do Fizbuzz
 
 def robot(pos):
     if pos == 4:
-        return '4'
+        return str(4)
     if pos == 2:
-        return '2'
-    return '1'
+        return str(2)
+    return str(1)
 
 if __name__ == '__main__':
     assert robot(1) == '1'
