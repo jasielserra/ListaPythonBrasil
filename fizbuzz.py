@@ -8,11 +8,7 @@ Regras do Fizbuzz
 
 """
 def robot(pos):
-    if pos == 9:
-        return 'fizz'
-    if pos == 6:
-        return 'fizz'
-    if pos == 3:
+    if pos == 9 or pos == 6 or pos == 3:
         return 'fizz'
     return str(pos)
 
