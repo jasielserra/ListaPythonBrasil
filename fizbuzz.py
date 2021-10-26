@@ -8,6 +8,8 @@ Regras do Fizbuzz
 
 """
 def robot(pos):
+    if pos == 5:
+        return 'buzz'
     if pos in (9,6,3):
         return 'fizz'
     return str(pos)
@@ -20,3 +22,4 @@ if __name__ == '__main__':
     assert robot(3) == 'fizz'
     assert robot(6) == 'fizz'
     assert robot(9) == 'fizz'
+    assert robot(5) == 'buzz'
