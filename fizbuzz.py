@@ -8,11 +8,11 @@ Regras do Fizbuzz
 
 """
 def robot(pos):
-    if pos == 20 or pos == 10 or pos == 5:
+    if pos in (20,10,5):
         return 'buzz'
-
-    if pos in (9,6,3):
+    if pos - int(pos / 3) * 3 == 0:
         return 'fizz'
+
     return str(pos)
 
 if __name__ == '__main__':
