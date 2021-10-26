@@ -8,12 +8,14 @@ Regras do Fizbuzz
 
 """
 def robot(pos):
+    say = str(pos)
     if pos % 3 == 0 and pos % 5 == 0:
-        return 'fizzbuzz'
+        say ='fizzbuzz'
     if pos % 5 == 0:
-        return 'buzz'
+        say ='buzz'
     if pos % 3 == 0:
-        return 'fizz'
+        say ='fizz'
+    return say
 
 
     return str(pos)
