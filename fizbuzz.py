@@ -7,8 +7,9 @@ Regras do Fizbuzz
 4. Para qualquer outra posição fale o próprio número
 
 """
-
 def robot(pos):
+    if pos == 9:
+        return 'fizz'
     if pos == 6:
         return 'fizz'
     if pos == 3:
@@ -22,3 +23,4 @@ if __name__ == '__main__':
 
     assert robot(3) == 'fizz'
     assert robot(6) == 'fizz'
+    assert robot(9) == 'fizz'
