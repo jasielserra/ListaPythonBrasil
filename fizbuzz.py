@@ -7,24 +7,28 @@ Regras do Fizbuzz
 4. Para qualquer outra posição fale o próprio número
 
 """
+def multiple_of(base,num):
+    return num % base == 0
+
 def multiple_of_5(num):
-    return num % 5 == 0
+    return multiple_of(5,num)
 
 def multiple_of_3(num):
-    return num % 3 == 0
+    return multiple_of(3,num)
 
 def robot(pos):
     say = str(pos)
+
     if multiple_of_5(pos) and multiple_of_3(pos):
         say ='fizzbuzz'
     elif multiple_of_5(pos):
         say ='buzz'
     elif multiple_of_3(pos):
         say ='fizz'
+
     return say
 
 
-    return str(pos)
 
 if __name__ == '__main__':
     assert robot(1) == '1'
