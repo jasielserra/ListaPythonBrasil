@@ -1,4 +1,4 @@
-from random import shuffle
+from utilizandorandom import shuffle
 
 n = list(range(10))
 shuffle(n)
