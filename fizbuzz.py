@@ -8,7 +8,7 @@ Regras do Fizbuzz
 
 """
 def robot(pos):
-    if pos in (20,10,5):
+    if pos - int(pos / 5) * 5 == 0:
         return 'buzz'
     if pos - int(pos / 3) * 3 == 0:
         return 'fizz'
