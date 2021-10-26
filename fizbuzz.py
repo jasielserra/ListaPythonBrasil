@@ -9,7 +9,10 @@ Regras do Fizbuzz
 """
 
 def robot(pos):
+    if pos == 2:
+        return '2'
     return '1'
 
 if __name__ == '__main__':
     assert robot(1) == '1'
+    assert robot(2) == '2'
